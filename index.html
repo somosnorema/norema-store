@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101b35">
+  <title>NOREMA | Bienestar y productos seleccionados</title>
+  <meta name="description" content="Compra en NOREMA. Productos seleccionados, atención por WhatsApp y opciones de envío a toda Venezuela.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="NOREMA | Tu tienda online">
+  <meta property="og:description" content="Descubre nuestros productos y compra de forma fácil y segura en Venezuela.">
+  <meta property="og:image" content="/assets/norema-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="topline">
+    <span>Envíos a toda Venezuela</span><span class="topline-dot">•</span>
+    <span id="rate-label">Consultando tasa BCV…</span>
+    <span id="rate-date" class="rate-date"></span>
+  </div>
+  <header class="site-header">
+    <div class="header-main container">
+      <a class="brand" href="#" aria-label="NOREMA, inicio">
+        <img src="/assets/norema-logo.png" alt="NOREMA" onerror="this.style.display='none'">
+        <span class="brand-fallback">NOREMA</span>
+      </a>
+      <form class="search" id="search-form" role="search">
+        <input id="search-input" type="search" placeholder="¿Qué estás buscando?" aria-label="Buscar productos">
+        <button aria-label="Buscar" type="submit">⌕</button>
+      </form>
+      <div class="header-actions">
+        <div class="rate-chip"><small>Tasa oficial de referencia</small><strong id="header-rate">Cargando…</strong></div>
+        <button class="cart-trigger" id="open-cart" aria-label="Abrir carrito">🛒 <span>Carrito</span><b id="cart-count">0</b></button>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">☰</button>
+      </div>
+    </div>
+    <nav class="category-nav" id="category-nav">
+      <div class="container nav-inner" id="category-links">
+        <button class="category-link active" data-category="Todos">Todos</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-copy">
+        <span class="eyebrow">BIENESTAR · CALIDAD · CONFIANZA</span>
+        <h1>Lo que necesitas para sentirte <em>mejor cada día.</em></h1>
+        <p>Productos seleccionados para acompañar tu bienestar. Compra fácil, recibe en Venezuela y cuenta con nuestro equipo.</p>
+        <a class="btn btn-primary" href="#catalogo">Explorar productos <span>→</span></a>
+        <div class="hero-note"><span class="check">✓</span> Atención personalizada por WhatsApp</div>
+      </div>
+      <div class="hero-art">
+        <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
+        <div class="hero-card">
+          <div class="hero-card-kicker">NOREMA PICKS</div>
+          <div class="hero-card-title">Tu bienestar<br><strong>es prioridad.</strong></div>
+          <div class="hero-card-pill">Compra con confianza</div>
+          <div class="hero-spark">✦</div>
+        </div>
+        <div class="floating-tag tag-top">Envíos nacionales</div>
+        <div class="floating-tag tag-bottom">Pago al recibir*</div>
+      </div>
+    </section>
+
+    <section class="benefits container" aria-label="Beneficios de comprar en Norema">
+      <div class="benefit"><span class="benefit-icon">🚚</span><div><strong>Envíos a toda Venezuela</strong><small>Opciones según tu ubicación</small></div></div>
+      <div class="benefit"><span class="benefit-icon">📦</span><div><strong>Paga al recibir*</strong><small>En métodos seleccionados</small></div></div>
+      <div class="benefit"><span class="benefit-icon">⚡</span><div><strong>Delivery en Caracas</strong><small>Express sujeto a cobertura</small></div></div>
+      <div class="benefit"><span class="benefit-icon">💬</span><div><strong>Atención por WhatsApp</strong><small>Estamos para ayudarte</small></div></div>
+    </section>
+
+    <section class="catalog-section container" id="catalogo">
+      <div class="section-heading">
+        <div><span class="eyebrow">NUESTRO CATÁLOGO</span><h2>Encuentra tu próximo favorito</h2><p>Productos seleccionados para ti.</p></div>
+        <div class="catalog-tools"><label for="sort-select">Ordenar:</label><select id="sort-select"><option value="featured">Destacados</option><option value="low">Menor precio</option><option value="high">Mayor precio</option></select></div>
+      </div>
+      <div class="mobile-search"><input id="mobile-search" type="search" placeholder="Buscar productos…"></div>
+      <div class="product-grid" id="product-grid" aria-live="polite"><div class="loading">Cargando catálogo…</div></div>
+      <p class="empty-state hidden" id="empty-state">No encontramos productos con esa búsqueda.</p>
+    </section>
+
+    <section class="trust-band">
+      <div class="container trust-inner"><div><span class="eyebrow">COMPRA CON TRANQUILIDAD</span><h2>Estamos contigo en cada paso.</h2><p>Te orientamos antes de comprar y coordinamos los detalles de tu entrega directamente por WhatsApp.</p></div><a class="btn btn-light" href="https://wa.me/584148804424?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20productos" target="_blank" rel="noopener">Hablar con un asesor ↗</a></div>
+    </section>
+
+    <section class="reviews container">
+      <div class="section-heading"><div><span class="eyebrow">EXPERIENCIAS NOREMA</span><h2>Personas que compran con confianza</h2></div></div>
+      <div class="review-grid">
+        <article class="review-card"><div class="stars">★★★★★</div><p>“La atención fue muy amable y me explicaron las opciones de envío antes de confirmar.”</p><strong>Cliente NOREMA</strong><small>Compra verificada*</small></article>
+        <article class="review-card"><div class="stars">★★★★★</div><p>“El proceso fue sencillo. Pude hacer mi pedido por WhatsApp sin complicaciones.”</p><strong>Cliente NOREMA</strong><small>Compra verificada*</small></article>
+        <article class="review-card"><div class="stars">★★★★★</div><p>“Me gustó poder ver el precio en dólares y su referencia en bolívares.”</p><strong>Cliente NOREMA</strong><small>Compra verificada*</small></article>
+      </div>
+      <p class="disclaimer">*Testimonios de ejemplo: reemplázalos por opiniones reales y autorizadas antes de publicar.</p>
+    </section>
+
+    <section class="faq-section">
+      <div class="container faq-layout">
+        <div><span class="eyebrow">¿TIENES DUDAS?</span><h2>Preguntas frecuentes</h2><p>Información clara para que compres con confianza.</p></div>
+        <div class="faq-list">
+          <details><summary>¿Cómo puedo realizar un pedido?</summary><p>Agrega productos al carrito o pulsa “Comprar ahora”. Completa los datos obligatorios y confirma el pedido abriendo WhatsApp.</p></details>
+          <details><summary>¿Cómo se calcula el precio en bolívares?</summary><p>Se multiplica el precio en USD por la tasa BCV de referencia que aparece en la tienda. La tasa puede variar durante el día.</p></details>
+          <details><summary>¿Qué métodos de envío están disponibles?</summary><p>Contamos con envío por agencias MRW, ZOOM y TEALCA, delivery express en Caracas y envío a domicilio en estados seleccionados. Las opciones se validan en el formulario.</p></details>
+          <details><summary>¿Cuándo debo pagar?</summary><p>Depende del método de envío. Algunas modalidades permiten pagar al recibir y el envío anticipado se coordina por WhatsApp.</p></details>
+          <details><summary>¿Cuál es la política de cambios y devoluciones?</summary><p>Comunícate con nosotros por WhatsApp antes de devolver un producto. La solicitud será revisada según el estado del artículo, su categoría y la normativa aplicable.</p></details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-main">
+      <div class="footer-brand"><img src="/assets/norema-logo.png" alt="NOREMA" onerror="this.style.display='none'"><p>Productos seleccionados. Atención cercana. Compra fácil en Venezuela.</p></div>
+      <div><h3>Contacto</h3><a href="https://wa.me/584148804424" target="_blank" rel="noopener">WhatsApp: +58 414-8804424</a><a href="mailto:hola@tutienda.com">hola@tutienda.com</a></div>
+      <div><h3>Información</h3><a href="#catalogo">Catálogo</a><a href="#privacidad">Privacidad</a><a href="#envios">Envíos y devoluciones</a></div>
+      <div><h3>Síguenos</h3><a href="https://instagram.com/somosnorema" target="_blank" rel="noopener">Instagram @somosnorema ↗</a><a href="https://wa.me/584148804424" target="_blank" rel="noopener">WhatsApp ↗</a></div>
+    </div>
+    <div class="container footer-bottom" id="privacidad"><span>© <span id="year"></span> NOREMA. Todos los derechos reservados.</span><span>Al continuar, aceptas el uso de los datos suministrados exclusivamente para gestionar tu pedido.</span></div>
+  </footer>
+
+  <!-- Panel del carrito -->
+  <div class="overlay" id="cart-overlay"></div>
+  <aside class="side-panel" id="cart-panel" aria-label="Carrito de compras" aria-hidden="true">
+    <div class="panel-header"><div><span class="eyebrow">TU COMPRA</span><h2>Mi carrito</h2></div><button class="icon-btn" id="close-cart" aria-label="Cerrar">×</button></div>
+    <div class="cart-items" id="cart-items"></div>
+    <div class="cart-footer"><div class="totals"><span>Subtotal</span><strong id="cart-total-usd">$0.00</strong></div><div class="totals bs-total"><span>Referencia en bolívares</span><strong id="cart-total-bs">Bs. 0,00</strong></div><button class="btn btn-primary btn-block" id="checkout-button">Continuar con el pedido →</button><small>El pedido se confirma por WhatsApp.</small></div>
+  </aside>
+
+  <!-- Modal de detalle -->
+  <div class="modal-backdrop" id="detail-modal" role="dialog" aria-modal="true" aria-label="Detalle del producto">
+    <div class="modal detail-dialog"><button class="modal-close" data-close="detail-modal" aria-label="Cerrar">×</button><div id="detail-content"></div></div>
+  </div>
+
+  <!-- Formulario obligatorio de pedido -->
+  <div class="modal-backdrop" id="order-modal" role="dialog" aria-modal="true" aria-labelledby="order-title">
+    <div class="modal order-dialog">
+      <button class="modal-close" data-close="order-modal" aria-label="Cerrar">×</button>
+      <div id="order-form-view">
+        <span class="eyebrow">ÚLTIMO PASO</span><h2 id="order-title">Completa tu pedido</h2><p class="modal-intro">Verifica tu compra y déjanos tus datos para coordinar la entrega.</p>
+        <div class="order-summary" id="order-summary"></div>
+        <form id="order-form" novalidate>
+          <fieldset><legend>1. Método de envío</legend>
+            <label class="shipping-option"><input type="radio" name="shipping" value="Envío Gratis + Pago Anticipado" required><span><b>Envío Gratis + Pago Anticipado</b><small>Agencias MRW y ZOOM de Venezuela. Los datos de pago se coordinan por WhatsApp.</small></span></label>
+            <label class="shipping-option"><input type="radio" name="shipping" value="Envío Gratis + Pagas al Recibir"><span><b>Envío Gratis + Pagas al Recibir</b><small>Retiro en agencias TEALCA en Venezuela.</small></span></label>
+            <label class="shipping-option"><input type="radio" name="shipping" value="Delivery Express en 1 Hora"><span><b>Delivery Express en 1 Hora</b><small>Disponible únicamente en Distrito Capital (Caracas).</small></span></label>
+            <label class="shipping-option"><input type="radio" name="shipping" value="Envío a Domicilio + Pagas al Recibir"><span><b>Envío a Domicilio + Pagas al Recibir</b><small>Solo Aragua, Carabobo, Distrito Capital, La Guaira, Lara, Miranda, Yaracuy y Zulia.</small></span></label>
+            <p class="inline-notice hidden" id="shipping-notice"></p>
+          </fieldset>
+          <fieldset><legend>2. Datos del cliente</legend>
+            <div class="form-grid">
+              <label>Nombre<input name="firstName" autocomplete="given-name" required maxlength="60"></label>
+              <label>Apellido<input name="lastName" autocomplete="family-name" required maxlength="60"></label>
+              <label>WhatsApp<input name="phone" placeholder="0412-1234567" inputmode="tel" required pattern="0(412|414|416|424|426|412|422)[- ]?[0-9]{7}"></label>
+              <label>Cédula<input name="cedula" placeholder="V-12345678" required pattern="[VEve][- ]?[0-9]{5,9}" title="Usa V o E seguido de 5 a 9 números."></label>
+              <label class="full">Estado<select name="state" id="state-select" required><option value="">Selecciona tu estado</option></select></label>
+              <label>Ciudad<input name="city" required maxlength="70"></label>
+              <label class="full">Dirección exacta<input name="address" required maxlength="180" placeholder="Urbanización, calle, edificio, casa…"></label>
+              <label class="full">Punto de referencia<input name="reference" required maxlength="140" placeholder="Cerca de…"></label>
+            </div>
+          </fieldset>
+          <p class="form-error hidden" id="form-error" role="alert"></p>
+          <button class="btn btn-primary btn-block" type="submit">Enviar pedido por WhatsApp ↗</button>
+          <small class="form-privacy">Tus datos se utilizarán únicamente para coordinar esta compra.</small>
+        </form>
+      </div>
+      <div class="success-view hidden" id="success-view"><div class="success-icon">✓</div><h2>¡Pedido enviado!</h2><p>Te contactaremos por WhatsApp para coordinar los detalles de tu compra.</p><button class="btn btn-primary" id="finish-order">Volver a la tienda</button></div>
+    </div>
+  </div>
+
+  <!-- Botón flotante de WhatsApp -->
+  <div class="whatsapp-widget">
+    <div class="whatsapp-bubble">¿Necesitas ayuda? ¡Escríbenos!</div>
+    <a class="whatsapp-float" href="https://wa.me/584148804424?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20productos" target="_blank" rel="noopener" aria-label="Escribir a NOREMA por WhatsApp">
+      <span class="whatsapp-waves"></span><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16.04 3C9.03 3 3.33 8.67 3.33 15.65c0 2.23.59 4.41 1.72 6.34L3.2 28.9l7.1-1.82a12.8 12.8 0 0 0 5.73 1.36h.01c7 0 12.7-5.68 12.7-12.66 0-3.38-1.32-6.56-3.72-8.95A12.63 12.63 0 0 0 16.04 3zm0 23.28h-.01a10.6 10.6 0 0 1-5.4-1.48l-.39-.23-4.22 1.08 1.13-4.1-.25-.42a10.52 10.52 0 0 1-1.62-5.48c0-5.84 4.77-10.59 10.63-10.59 2.84 0 5.51 1.1 7.52 3.1a10.5 10.5 0 0 1 3.11 7.5c0 5.84-4.77 10.6-10.5 10.6zm5.83-7.93c-.32-.16-1.9-.94-2.2-1.05-.3-.11-.51-.16-.73.16-.21.32-.83 1.05-1.02 1.27-.19.21-.38.24-.7.08-.32-.16-1.35-.5-2.57-1.6-.95-.84-1.6-1.88-1.79-2.2-.19-.32-.02-.49.14-.65.14-.14.32-.38.48-.57.16-.19.21-.32.32-.54.11-.21.05-.4-.03-.56-.08-.16-.73-1.75-1-2.4-.26-.63-.53-.55-.73-.56h-.62c-.21 0-.56.08-.86.4-.3.32-1.13 1.1-1.13 2.67s1.16 3.1 1.32 3.31c.16.21 2.28 3.47 5.52 4.86.77.33 1.37.53 1.84.68.77.24 1.47.21 2.02.13.62-.09 1.9-.78 2.17-1.53.27-.75.27-1.4.19-1.53-.08-.13-.3-.21-.62-.37z"/></svg><span class="wa-badge">1</span>
+    </a>
+  </div>
+  <script src="/app.js" defer></script>
+</body>
+</html>

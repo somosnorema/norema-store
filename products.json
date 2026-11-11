@@ -1,0 +1,80 @@
+[
+  {
+    "id": "magnesium-complex",
+    "name": "Magnesium Complex",
+    "description": "Complejo de magnesio en cápsulas para complementar tu rutina diaria de bienestar.",
+    "priceUSD": 19.99,
+    "images": [
+      "https://images.unsplash.com/photo-1571781926291-c477ebfd024b?auto=format&fit=crop&w=900&q=85"
+    ],
+    "category": "Bienestar",
+    "stock": 18,
+    "badge": "Más vendido",
+    "freeShipping": true
+  },
+  {
+    "id": "allicarp",
+    "name": "ALLICARP",
+    "description": "Suplemento de ajo negro y otros ingredientes para acompañar hábitos saludables.",
+    "priceUSD": 24.5,
+    "images": [
+      "https://images.unsplash.com/photo-1603909223429-69bb7101f420?auto=format&fit=crop&w=900&q=85"
+    ],
+    "category": "Bienestar",
+    "stock": 7,
+    "badge": "Últimas unidades",
+    "freeShipping": true
+  },
+  {
+    "id": "omega-3",
+    "name": "Omega 3 Premium",
+    "description": "Ácidos grasos omega 3 en una presentación práctica para tu día a día.",
+    "priceUSD": 17.0,
+    "images": [
+      "https://images.unsplash.com/photo-1550572017-edd951b55104?auto=format&fit=crop&w=900&q=85"
+    ],
+    "category": "Vitaminas",
+    "stock": 25,
+    "badge": "Oferta",
+    "freeShipping": false
+  },
+  {
+    "id": "vitamina-c",
+    "name": "Vitamina C",
+    "description": "Complemento nutricional para integrar a una alimentación equilibrada.",
+    "priceUSD": 13.75,
+    "images": [
+      "https://images.unsplash.com/photo-1616671276441-2f2c277b8bf5?auto=format&fit=crop&w=900&q=85"
+    ],
+    "category": "Vitaminas",
+    "stock": 32,
+    "badge": "",
+    "freeShipping": true
+  },
+  {
+    "id": "aceite-oregano",
+    "name": "Aceite de Orégano + Black Seed",
+    "description": "Combinación de aceite de orégano y aceite de semilla negra en softgels.",
+    "priceUSD": 21.9,
+    "images": [
+      "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=900&q=85"
+    ],
+    "category": "Bienestar",
+    "stock": 11,
+    "badge": "Popular",
+    "freeShipping": true
+  },
+  {
+    "id": "colageno",
+    "name": "Colágeno Hidrolizado",
+    "description": "Una opción práctica para complementar tu rutina de cuidado personal.",
+    "priceUSD": 27.0,
+    "images": [
+      "https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?auto=format&fit=crop&w=900&q=85"
+    ],
+    "category": "Cuidado personal",
+    "stock": 5,
+    "badge": "Últimas unidades",
+    "freeShipping": false
+  }
+]

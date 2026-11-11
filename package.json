@@ -1,0 +1,10 @@
+{
+  "name": "norema-venezuela-store",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Tienda est\u00e1tica NOREMA para Venezuela, lista para Netlify",
+  "dependencies": {
+    "@netlify/blobs": "^8.1.0"
+  }
+}
